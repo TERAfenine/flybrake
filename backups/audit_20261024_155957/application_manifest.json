@@ -1,0 +1,34 @@
+{
+  "backup": "D:\\flybrake\\backups\\audit_20261024_155957",
+  "modified_files": [
+    "app.py",
+    "train.py",
+    "run_5_seeds.py",
+    "fix_summary_5seeds.py",
+    "debug_banc.py",
+    "src/model.py",
+    "src/evaluation.py",
+    "src/audit.py",
+    "test_research.py",
+    "verify_reproducibility.py",
+    "README.md",
+    "AUDIT_KO.md",
+    "results/summary_5seeds.csv"
+  ],
+  "new_results": "D:\\flybrake\\results\\revised_audit_20261024",
+  "preserved_data_and_old_results_files": 52,
+  "applied_sha256": {
+    "app.py": "d3f61cb58fb320a53677f22c3764f127db4da96850e9917937a5681a82da8479",
+    "train.py": "b58e889140b38b972bbd262570cd541c4d6a03c9a166baea265d8e2373723f3f",
+    "run_5_seeds.py": "c1998f88a8c5a1b404c7f439cf28f80059012b3746ef0c37cb5b08cb1030fe7e",
+    "fix_summary_5seeds.py": "4c1dd8add0749a1cdde2d568acd7e6a99e85bea421c64de85e34e2d5480916ff",
+    "debug_banc.py": "d0d4f4fd7dabfb5199d24846fb6c9f0abf5c0740612902bbe924c44bbb6409a5",
+    "src/model.py": "e6b06cb2b52ca54f9a6b0c8a5ea3bae4cdbe83084431754041def8461e9b72be",
+    "src/evaluation.py": "75aa0e36d30511b54bb080f13b77f1d0961b12386de4783778703ca0b1d17173",
+    "src/audit.py": "83dd0f1e3da34f0c685308ceff1e3cdd0f563b10e8a8ad5a0c29ee6a952c4ae9",
+    "test_research.py": "587cc36e45863cf7f42307f8e2084c9e5bdc6c9cd703de0c7ccb70e35af72083",
+    "verify_reproducibility.py": "67e22237a258d20229bbffd8fd04fdea4c398a388fb8fdd1c393b9f5fcd6dc44",
+    "README.md": "5db9178f5a233a731f4614036620abe51bb189652c117eacec8bc53b8d983631",
+    "AUDIT_KO.md": "f924326c5f8e5ac444fb22d6ec0af0e05e4968151e536b10adda7327502a0fa0"
+  }
+}

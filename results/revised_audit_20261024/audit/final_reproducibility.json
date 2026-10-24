@@ -1,0 +1,32 @@
+[
+  {
+    "protocol": "candidate",
+    "seed": 42,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true
+  },
+  {
+    "protocol": "candidate",
+    "seed": 43,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true
+  },
+  {
+    "protocol": "candidate",
+    "seed": 44,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true
+  },
+  {
+    "protocol": "candidate",
+    "seed": 45,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true
+  },
+  {
+    "protocol": "candidate",
+    "seed": 46,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true
+  }
+]

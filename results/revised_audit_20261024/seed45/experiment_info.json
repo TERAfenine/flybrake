@@ -1,0 +1,109 @@
+{
+  "protocol": "revised_v1",
+  "seed": 45,
+  "attack_seed": 42,
+  "epochs_requested": 18,
+  "extended_controls": true,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "torch": "2.14.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "networkx": "3.7"
+  },
+  "input_sha256": {
+    "D:\\flybrake\\data\\banc_graph.npz": "185c0037ffe36feb8acfff0ea84c13f5423c3129b8a11c283e4ef3605e681d34",
+    "D:\\flybrake\\data\\datatraining.txt": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56",
+    "D:\\flybrake\\data\\datatest2.txt": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095"
+  },
+  "code_sha256": {
+    "train.py": "b58e889140b38b972bbd262570cd541c4d6a03c9a166baea265d8e2373723f3f",
+    "src\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\audit.py": "83dd0f1e3da34f0c685308ceff1e3cdd0f563b10e8a8ad5a0c29ee6a952c4ae9",
+    "src\\connectome.py": "9515c0c922d09907658d16cd9eb0a1e97b6cd1bd6e857a9519ca2145e599f6df",
+    "src\\data.py": "1ce88dd093e5e2b64dfa1035e7e90a10485e65c13eeca34e2fb50143b4e98f0a",
+    "src\\evaluation.py": "75aa0e36d30511b54bb080f13b77f1d0961b12386de4783778703ca0b1d17173",
+    "src\\model.py": "e6b06cb2b52ca54f9a6b0c8a5ea3bae4cdbe83084431754041def8461e9b72be"
+  },
+  "split_audit": {
+    "train_time_sorted": true,
+    "test_time_sorted": true,
+    "overlapping_timestamps": 0,
+    "validation_after_training": true,
+    "test_after_validation": true,
+    "shared_feature_vectors": 0,
+    "train_range": [
+      "2015-02-04 17:51:00",
+      "2015-02-10 09:33:00"
+    ],
+    "test_range": [
+      "2015-02-11 14:48:00",
+      "2015-02-18 09:19:00"
+    ],
+    "validation_gap_seconds": 60.0,
+    "passes_basic_checks": true
+  },
+  "training_log": {
+    "banc_signed": {
+      "best_epoch": 12,
+      "epochs_run": 17,
+      "validation_bce": 0.23483707010746002,
+      "constraint": "signed",
+      "active_recurrent_weights": 1733
+    },
+    "rewired_signed": {
+      "best_epoch": 11,
+      "epochs_run": 16,
+      "validation_bce": 0.20491094887256622,
+      "constraint": "signed",
+      "active_recurrent_weights": 1733
+    },
+    "banc_unsigned": {
+      "best_epoch": 12,
+      "epochs_run": 17,
+      "validation_bce": 0.21405158936977386,
+      "constraint": "signed",
+      "active_recurrent_weights": 1733
+    },
+    "rewired_unsigned": {
+      "best_epoch": 13,
+      "epochs_run": 18,
+      "validation_bce": 0.19944655895233154,
+      "constraint": "signed",
+      "active_recurrent_weights": 1733
+    },
+    "banc_free": {
+      "best_epoch": 13,
+      "epochs_run": 18,
+      "validation_bce": 0.22703635692596436,
+      "constraint": "free",
+      "active_recurrent_weights": 1733
+    },
+    "rewired_free": {
+      "best_epoch": 10,
+      "epochs_run": 15,
+      "validation_bce": 0.2169547975063324,
+      "constraint": "free",
+      "active_recurrent_weights": 1733
+    }
+  },
+  "batch_seed": 2045,
+  "rewire_seed": 1045,
+  "torch_threads": 4,
+  "unsigned_means": "all-positive softplus, NOT unconstrained",
+  "BANC_source_version": "v888",
+  "BANC_neurons": 96,
+  "BANC_edges": 1733,
+  "BANC_predicted_GABA_neurons": 50,
+  "training_rows": 6514,
+  "validation_rows": 1629,
+  "test_rows": 9752,
+  "sensor_scenarios": {
+    "missing_light": "25% samples set to NaN",
+    "co2_spike": "25% samples +3000 ppm"
+  },
+  "limitations": "GABA inhibitory sign is an engineering assumption; test office data is not school data; output not certified safety device."
+}

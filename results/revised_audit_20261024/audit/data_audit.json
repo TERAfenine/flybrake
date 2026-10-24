@@ -1,0 +1,39 @@
+{
+  "split": {
+    "train_time_sorted": true,
+    "test_time_sorted": true,
+    "overlapping_timestamps": 0,
+    "validation_after_training": true,
+    "test_after_validation": true,
+    "shared_feature_vectors": 0,
+    "train_range": [
+      "2015-02-04 17:51:00",
+      "2015-02-10 09:33:00"
+    ],
+    "test_range": [
+      "2015-02-11 14:48:00",
+      "2015-02-18 09:19:00"
+    ],
+    "validation_gap_seconds": 60.0,
+    "passes_basic_checks": true
+  },
+  "graph": {
+    "source": "BANC v888 user-supplied inputs (not independently authenticated)",
+    "region": "ventral_nerve_cord",
+    "seed": 42
+  },
+  "neurons": 96,
+  "edges": 1733,
+  "gaba": 50,
+  "stored_combined_matches_seed_files": true,
+  "input_sha256": {
+    "banc_888_edgelist_simple_v2.feather": "363fdef3813b72a5e45a42f17034cd5a544b654c838929cecf6e1ce5f60625cb",
+    "banc_888_meta.feather": "86ccf5df0c67419f8c5f43e93a7ed38d23a080e9f7fde26737290252f3780098",
+    "banc_888_neurotransmitter_prediction_v2.csv": "bb0f4afa48a05d90008c6d801e053ff2667fb1ba68e29501c92f49514540da1d",
+    "banc_graph.npz": "185c0037ffe36feb8acfff0ea84c13f5423c3129b8a11c283e4ef3605e681d34",
+    "datatest.txt": "1b92c7c1b2838963464fa891a610cf3c5db4becb7189189b29b330107a584c7f",
+    "datatest2.txt": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+    "datatraining.txt": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56",
+    "README.txt": "d163baa52fa2f2df809d18367af0e786ce17ffa0079a49b01b6fae9908d93793"
+  }
+}

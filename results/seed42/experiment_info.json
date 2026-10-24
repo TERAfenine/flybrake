@@ -1,0 +1,14 @@
+{
+  "BANC_source_version": "v888",
+  "BANC_neurons": 96,
+  "BANC_edges": 1733,
+  "BANC_predicted_GABA_neurons": 50,
+  "training_rows": 6514,
+  "validation_rows": 1629,
+  "test_rows": 9752,
+  "sensor_scenarios": {
+    "missing_light": "25% samples set to NaN",
+    "co2_spike": "25% samples +3000 ppm"
+  },
+  "limitations": "GABA inhibitory sign is an engineering assumption; test office data is not school data; output not certified safety device."
+}

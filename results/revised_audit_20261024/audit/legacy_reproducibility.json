@@ -1,0 +1,37 @@
+[
+  {
+    "protocol": "legacy",
+    "seed": 42,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true,
+    "historical_metrics_max_abs_delta": 0.0008951598417320517
+  },
+  {
+    "protocol": "legacy",
+    "seed": 43,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true,
+    "historical_metrics_max_abs_delta": 0.002282026663680048
+  },
+  {
+    "protocol": "legacy",
+    "seed": 44,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true,
+    "historical_metrics_max_abs_delta": 0.002349223260003641
+  },
+  {
+    "protocol": "legacy",
+    "seed": 45,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true,
+    "historical_metrics_max_abs_delta": 0.0014625859552696019
+  },
+  {
+    "protocol": "legacy",
+    "seed": 46,
+    "repeat_metrics_max_abs_delta": 0.0,
+    "repeat_checkpoint_tensors_equal": true,
+    "historical_metrics_max_abs_delta": 0.0029752583777012953
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "ids_found": 96,
+  "region_counts": {
+    "ventral_nerve_cord": 96
+  },
+  "class_counts": {
+    "ventral_nerve_cord_intrinsic": 96
+  },
+  "duplicate_edges": 0,
+  "mask_matches_raw": true,
+  "counts_match_raw": true,
+  "nt_signs_match": true,
+  "minimum_nt_score": 0.816985,
+  "minimum_nt_count": 1333
+}

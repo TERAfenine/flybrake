@@ -1,0 +1,77 @@
+[
+  {
+    "seed": 42,
+    "table": "metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 42,
+    "table": "coverage_metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 42,
+    "table": "validation_threshold_metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 43,
+    "table": "metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 43,
+    "table": "coverage_metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 43,
+    "table": "validation_threshold_metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 44,
+    "table": "metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 44,
+    "table": "coverage_metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 44,
+    "table": "validation_threshold_metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 45,
+    "table": "metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 45,
+    "table": "coverage_metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 45,
+    "table": "validation_threshold_metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 46,
+    "table": "metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 46,
+    "table": "coverage_metrics.csv",
+    "exact_match": true
+  },
+  {
+    "seed": 46,
+    "table": "validation_threshold_metrics.csv",
+    "exact_match": true
+  }
+]
