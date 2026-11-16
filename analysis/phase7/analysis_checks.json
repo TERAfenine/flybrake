@@ -1,0 +1,17 @@
+{
+  "basic": {
+    "rows": 180,
+    "infeasible_rows": 0,
+    "summary_incomplete_metrics": 0
+  },
+  "posthoc": {
+    "rows": 1080,
+    "infeasible_rows": 210,
+    "summary_incomplete_metrics": 508
+  },
+  "validation": {
+    "rows": 540,
+    "infeasible_rows": 0,
+    "summary_incomplete_metrics": 15
+  }
+}

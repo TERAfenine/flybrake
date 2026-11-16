@@ -1,0 +1,79 @@
+{
+  "config": {
+    "protocol": "phase7_exploratory_v1",
+    "train_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "rewire_seeds": [
+      1042,
+      1043,
+      1044
+    ],
+    "graph_seed": null,
+    "graph_selection": "fixed original NPZ; graph_seed not used",
+    "augmentation_seed": 4242,
+    "attack_seed": 42,
+    "validation_attack_seed": 43,
+    "tie_seed": 2026,
+    "batch_seed_offset": 2000,
+    "epochs": 18,
+    "patience": 5,
+    "min_delta": 0.0001,
+    "batch_size": 256,
+    "learning_rate": 0.006,
+    "weight_decay": 0.0001,
+    "clip_grad_norm": 2.0,
+    "torch_threads": 4,
+    "mlp_hidden": 196,
+    "activation": "tanh",
+    "device": "cpu"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "versions": {
+      "numpy": "1.26.0",
+      "pandas": "2.0.0",
+      "torch": "2.1.0",
+      "scikit-learn": "1.3.0",
+      "joblib": "1.3.0"
+    },
+    "torch_threads": 4,
+    "cuda_available": false
+  },
+  "protocol_sha256": "8626aae3cf56eb4c7adf2b8eb19d12797d291fa2313ea7e88cecbda5ee62f42e",
+  "scale_sha256": "106efea40937416aebf7a9104d314f7d0c4bef401a0cd95a096f8d2ff4e8d95d",
+  "files": {
+    "analysis\\phase7\\experiment.py": "8a0652dde3f4910ce570f8be9c99d6b5dc7b4768c8002c6cd6e38a4f77d2fa68",
+    "src\\model.py": "e6b06cb2b52ca54f9a6b0c8a5ea3bae4cdbe83084431754041def8461e9b72be",
+    "src\\data.py": "1ce88dd093e5e2b64dfa1035e7e90a10485e65c13eeca34e2fb50143b4e98f0a",
+    "src\\evaluation.py": "75aa0e36d30511b54bb080f13b77f1d0961b12386de4783778703ca0b1d17173",
+    "src\\connectome.py": "9515c0c922d09907658d16cd9eb0a1e97b6cd1bd6e857a9519ca2145e599f6df",
+    "data\\banc_graph.npz": "185c0037ffe36feb8acfff0ea84c13f5423c3129b8a11c283e4ef3605e681d34",
+    "data\\datatraining.txt": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56",
+    "data\\datatest2.txt": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095"
+  },
+  "split_audit": {
+    "train_time_sorted": true,
+    "test_time_sorted": true,
+    "overlapping_timestamps": 0,
+    "validation_after_training": true,
+    "test_after_validation": true,
+    "shared_feature_vectors": 0,
+    "train_range": [
+      "2015-02-04 17:51:00",
+      "2015-02-10 09:33:00"
+    ],
+    "test_range": [
+      "2015-02-11 14:48:00",
+      "2015-02-18 09:19:00"
+    ],
+    "validation_gap_seconds": 60.0,
+    "passes_basic_checks": true
+  }
+}

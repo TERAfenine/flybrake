@@ -1,0 +1,32 @@
+{
+  "run_id": "mlp_matched_t46",
+  "model": "mlp_matched",
+  "train_seed": 46,
+  "rewire_seed": null,
+  "graph_id": "original_banc_96",
+  "graph_seed": null,
+  "allocated": 1961,
+  "mask_active": 1961,
+  "output_effective": 1961,
+  "dense_matmul_macs": 1764,
+  "masked_matmul_macs": 1764,
+  "best_epoch": 8,
+  "epochs_run": 13,
+  "validation_bce": 0.21122755110263824,
+  "validation_bce_history": [
+    0.4805661141872406,
+    0.30078330636024475,
+    0.2897528111934662,
+    0.26539885997772217,
+    0.22277586162090302,
+    0.2620052993297577,
+    0.27167147397994995,
+    0.21122755110263824,
+    0.31531232595443726,
+    0.29240670800209045,
+    0.31833726167678833,
+    0.3073922395706177,
+    0.3500439524650574
+  ],
+  "training_seconds": 0.6900883999987855
+}

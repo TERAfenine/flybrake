@@ -1,0 +1,14 @@
+[
+  {
+    "run_id": "banc_signed_t42",
+    "state_exact": true,
+    "validation_scores_exact": true,
+    "repeat_training_seconds": 2.138415499997791
+  },
+  {
+    "run_id": "mlp_matched_t42",
+    "state_exact": true,
+    "validation_scores_exact": true,
+    "repeat_training_seconds": 0.8514231999943149
+  }
+]

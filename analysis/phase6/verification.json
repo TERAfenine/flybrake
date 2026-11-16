@@ -1,0 +1,264 @@
+{
+  "bundle": "results/revised_audit_20261024",
+  "seed_csv_equality": {
+    "basic": 210,
+    "posthoc": 1260,
+    "validation": 630
+  },
+  "arithmetic_checks": {
+    "basic": 2310,
+    "posthoc": 11165,
+    "validation": 6930
+  },
+  "grid": {
+    "basic": {
+      "expected": 210,
+      "actual": 210,
+      "missing": []
+    },
+    "posthoc": {
+      "expected": 1260,
+      "actual": 1260,
+      "missing": []
+    },
+    "validation": {
+      "expected": 630,
+      "actual": 630,
+      "missing": []
+    }
+  },
+  "source_summary_checks": {
+    "basic": 588,
+    "posthoc": 2842,
+    "validation": 1764
+  },
+  "graph_checks": [
+    {
+      "seed": 42,
+      "neurons": 96,
+      "edges": 1733,
+      "gaba": 50,
+      "degree_preserved": true,
+      "different_mask_entries": 2388
+    },
+    {
+      "seed": 43,
+      "neurons": 96,
+      "edges": 1733,
+      "gaba": 50,
+      "degree_preserved": true,
+      "different_mask_entries": 2396
+    },
+    {
+      "seed": 44,
+      "neurons": 96,
+      "edges": 1733,
+      "gaba": 50,
+      "degree_preserved": true,
+      "different_mask_entries": 2376
+    },
+    {
+      "seed": 45,
+      "neurons": 96,
+      "edges": 1733,
+      "gaba": 50,
+      "degree_preserved": true,
+      "different_mask_entries": 2344
+    },
+    {
+      "seed": 46,
+      "neurons": 96,
+      "edges": 1733,
+      "gaba": 50,
+      "degree_preserved": true,
+      "different_mask_entries": 2420
+    }
+  ],
+  "metadata": [
+    {
+      "seed": 42,
+      "attack_seed": 42,
+      "batch_seed": 2042,
+      "rewire_seed": 1042,
+      "training_rows": 6514,
+      "validation_rows": 1629,
+      "test_rows": 9752,
+      "python": "3.12.14",
+      "versions": {
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "torch": "2.14.1",
+        "scikit-learn": "1.9.1",
+        "joblib": "1.6.0",
+        "networkx": "3.7"
+      },
+      "split_audit": {
+        "train_time_sorted": true,
+        "test_time_sorted": true,
+        "overlapping_timestamps": 0,
+        "validation_after_training": true,
+        "test_after_validation": true,
+        "shared_feature_vectors": 0,
+        "train_range": [
+          "2015-02-04 17:51:00",
+          "2015-02-10 09:33:00"
+        ],
+        "test_range": [
+          "2015-02-11 14:48:00",
+          "2015-02-18 09:19:00"
+        ],
+        "validation_gap_seconds": 60.0,
+        "passes_basic_checks": true
+      }
+    },
+    {
+      "seed": 43,
+      "attack_seed": 42,
+      "batch_seed": 2043,
+      "rewire_seed": 1043,
+      "training_rows": 6514,
+      "validation_rows": 1629,
+      "test_rows": 9752,
+      "python": "3.12.14",
+      "versions": {
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "torch": "2.14.1",
+        "scikit-learn": "1.9.1",
+        "joblib": "1.6.0",
+        "networkx": "3.7"
+      },
+      "split_audit": {
+        "train_time_sorted": true,
+        "test_time_sorted": true,
+        "overlapping_timestamps": 0,
+        "validation_after_training": true,
+        "test_after_validation": true,
+        "shared_feature_vectors": 0,
+        "train_range": [
+          "2015-02-04 17:51:00",
+          "2015-02-10 09:33:00"
+        ],
+        "test_range": [
+          "2015-02-11 14:48:00",
+          "2015-02-18 09:19:00"
+        ],
+        "validation_gap_seconds": 60.0,
+        "passes_basic_checks": true
+      }
+    },
+    {
+      "seed": 44,
+      "attack_seed": 42,
+      "batch_seed": 2044,
+      "rewire_seed": 1044,
+      "training_rows": 6514,
+      "validation_rows": 1629,
+      "test_rows": 9752,
+      "python": "3.12.14",
+      "versions": {
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "torch": "2.14.1",
+        "scikit-learn": "1.9.1",
+        "joblib": "1.6.0",
+        "networkx": "3.7"
+      },
+      "split_audit": {
+        "train_time_sorted": true,
+        "test_time_sorted": true,
+        "overlapping_timestamps": 0,
+        "validation_after_training": true,
+        "test_after_validation": true,
+        "shared_feature_vectors": 0,
+        "train_range": [
+          "2015-02-04 17:51:00",
+          "2015-02-10 09:33:00"
+        ],
+        "test_range": [
+          "2015-02-11 14:48:00",
+          "2015-02-18 09:19:00"
+        ],
+        "validation_gap_seconds": 60.0,
+        "passes_basic_checks": true
+      }
+    },
+    {
+      "seed": 45,
+      "attack_seed": 42,
+      "batch_seed": 2045,
+      "rewire_seed": 1045,
+      "training_rows": 6514,
+      "validation_rows": 1629,
+      "test_rows": 9752,
+      "python": "3.12.14",
+      "versions": {
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "torch": "2.14.1",
+        "scikit-learn": "1.9.1",
+        "joblib": "1.6.0",
+        "networkx": "3.7"
+      },
+      "split_audit": {
+        "train_time_sorted": true,
+        "test_time_sorted": true,
+        "overlapping_timestamps": 0,
+        "validation_after_training": true,
+        "test_after_validation": true,
+        "shared_feature_vectors": 0,
+        "train_range": [
+          "2015-02-04 17:51:00",
+          "2015-02-10 09:33:00"
+        ],
+        "test_range": [
+          "2015-02-11 14:48:00",
+          "2015-02-18 09:19:00"
+        ],
+        "validation_gap_seconds": 60.0,
+        "passes_basic_checks": true
+      }
+    },
+    {
+      "seed": 46,
+      "attack_seed": 42,
+      "batch_seed": 2046,
+      "rewire_seed": 1046,
+      "training_rows": 6514,
+      "validation_rows": 1629,
+      "test_rows": 9752,
+      "python": "3.12.14",
+      "versions": {
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "torch": "2.14.1",
+        "scikit-learn": "1.9.1",
+        "joblib": "1.6.0",
+        "networkx": "3.7"
+      },
+      "split_audit": {
+        "train_time_sorted": true,
+        "test_time_sorted": true,
+        "overlapping_timestamps": 0,
+        "validation_after_training": true,
+        "test_after_validation": true,
+        "shared_feature_vectors": 0,
+        "train_range": [
+          "2015-02-04 17:51:00",
+          "2015-02-10 09:33:00"
+        ],
+        "test_range": [
+          "2015-02-11 14:48:00",
+          "2015-02-18 09:19:00"
+        ],
+        "validation_gap_seconds": 60.0,
+        "passes_basic_checks": true
+      }
+    }
+  ],
+  "source_summary_partial_groups": 15,
+  "saved_paired_values_verified": 2175,
+  "infeasible_posthoc_rows": 245,
+  "zero_decision_validation_rows": 10,
+  "prediction_identity_limit": "No row-level prediction/decision vectors saved. Same selected sample identities cannot be verified."
+}

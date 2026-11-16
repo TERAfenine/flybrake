@@ -1,0 +1,12 @@
+{
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "packages": {
+    "pandas": "2.0.0",
+    "numpy": "1.26.0",
+    "matplotlib": "3.8.0",
+    "scikit-learn": "1.3.0",
+    "torch": "2.1.0"
+  },
+  "purpose": "Recorded-data analysis only; not the original training environment"
+}

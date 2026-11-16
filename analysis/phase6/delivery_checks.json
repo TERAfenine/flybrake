@@ -1,0 +1,13 @@
+{
+  "report_local_links_checked": 12,
+  "basic_individual_markdown_rows_checked": 210,
+  "two_fault_gate_on_equality_model_seed_groups": 35,
+  "png_figures": 8,
+  "svg_figures": 8,
+  "summary_groups": {
+    "basic": 42,
+    "posthoc": 252,
+    "validation": 126
+  },
+  "passed": true
+}

@@ -1,0 +1,8 @@
+{
+  "protected": 501,
+  "unchanged": 500,
+  "authorized_changes": [
+    "src/lab_ux.py"
+  ],
+  "unexpected_changes": []
+}

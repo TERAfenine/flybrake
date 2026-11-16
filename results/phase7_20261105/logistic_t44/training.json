@@ -1,0 +1,17 @@
+{
+  "run_id": "logistic_t44",
+  "model": "logistic",
+  "train_seed": 44,
+  "rewire_seed": null,
+  "graph_id": "original_banc_96",
+  "graph_seed": null,
+  "allocated": 9,
+  "mask_active": 9,
+  "output_effective": 9,
+  "dense_matmul_macs": 8,
+  "masked_matmul_macs": 8,
+  "training_seconds": 0.019579599997086916,
+  "epochs_run": null,
+  "best_epoch": null,
+  "validation_bce": null
+}

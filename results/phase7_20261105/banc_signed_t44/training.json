@@ -1,0 +1,42 @@
+{
+  "run_id": "banc_signed_t44",
+  "model": "banc_signed",
+  "train_seed": 44,
+  "rewire_seed": null,
+  "graph_id": "original_banc_96",
+  "graph_seed": null,
+  "allocated": 9553,
+  "mask_active": 2070,
+  "output_effective": 1965,
+  "effective_recurrent": 1649,
+  "effective_bias": 93,
+  "effective_input_neurons": 22,
+  "backward_reach_sizes": [
+    24,
+    86,
+    93,
+    93
+  ],
+  "dense_matmul_macs": 37080,
+  "masked_matmul_macs": 7148,
+  "best_epoch": 9,
+  "epochs_run": 14,
+  "validation_bce": 0.31436800956726074,
+  "validation_bce_history": [
+    1.3541861772537231,
+    0.834784209728241,
+    0.4785044491291046,
+    0.4012596905231476,
+    0.38601359724998474,
+    0.35612574219703674,
+    0.35336169600486755,
+    0.34216728806495667,
+    0.31436800956726074,
+    0.31987476348876953,
+    0.32304155826568604,
+    0.3428637683391571,
+    0.325748473405838,
+    0.3264041841030121
+  ],
+  "training_seconds": 1.5767295000041486
+}

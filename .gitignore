@@ -219,4 +219,59 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-data/
+# FlyBrake / Streamlit Community Cloud
+# Keep app.py, pages/, src/, analysis/phase8/robustness.py, requirements.txt,
+# and .streamlit/config.toml in Git. Do NOT ignore .streamlit/ as a whole.
+.env.*
+!.env.example
+!.env.sample
+**/.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# Local editors, operating-system files and working copies
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.tmp
+*.bak
+/backups/
+/work/
+/outputs/
+
+# Only the small runtime graph and occupancy files are needed by the web app.
+# The large source BANC tables are used for graph extraction, not serving.
+# Keep datatraining.txt: Robustness Lab verifies its provenance hash.
+/data/*
+!/data/banc_graph.npz
+!/data/datatraining.txt
+!/data/datatest2.txt
+!/data/datatest.txt
+!/data/README.txt
+
+# Keep measured CSV/JSON summaries, .pt/.joblib checkpoints and graph NPZs.
+# In particular, retain results/seed42..46, revised_audit_20261024,
+# phase7_20261105 and phase8_20261116 for the existing research pages.
+# Per-input prediction archives are only needed for offline research/replay
+# tests and are not read by the deployed pages.
+/results/**/predictions.csv.gz
+/results/**/validation_predictions.csv.gz
+/results/**/*_predictions.npz
+
+# Evaluations created interactively on a running app are local output.
+# Community Cloud local output is not a substitute for an external archive.
+/results/phase8_ui_*/
+
+# Local timing runs and code snapshots; retain analysis code and reports.
+/analysis/phase7/pilot_*/
+/analysis/phase8/lab_ux_before.py
+
+# Ignore rules do not untrack files already committed to Git.
+# Review tracked IDE/backups/raw BANC files separately before publishing.
+
+# Deployment repository: keep only the root README, exclude research reports.
+*.md
+!/README.md

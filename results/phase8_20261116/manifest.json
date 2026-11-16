@@ -1,0 +1,77 @@
+{
+  "source_bundle": "results\\phase7_20261105",
+  "models": [
+    "logistic",
+    "banc_signed",
+    "rewired_signed"
+  ],
+  "train_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "attack_seeds": [
+    700,
+    701,
+    702
+  ],
+  "faults": [
+    "missing_light",
+    "co2_spike"
+  ],
+  "rates": [
+    0.0,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "rewire_seeds": [
+    1042,
+    1043,
+    1044
+  ],
+  "selection": "nested permutation prefix floor(rate*N)",
+  "test_sha256": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+  "prep_sha256": "a4ed187bdc2c88e91bb8dde77e854433cc87c7eef8a8b07ec643a3e2c5631296",
+  "checkpoints": {
+    "logistic_t42": "9eae2f4d538e233e3d6a18d1170c3aac7c9afc19a5641908b404b978bb473fe3",
+    "logistic_t43": "e950186100a29ee1f415ab9b3b8d95b76c0198ff092bc64a27f98f30049c1cdd",
+    "logistic_t44": "0b26547432172423a786c5068f267a199d7140a729ff894feac02dce90978228",
+    "logistic_t45": "04f72b29a4653ffc3d217db5de64aae8159d35c6b0d522fdb24ecee14c923f58",
+    "logistic_t46": "6ec65d12aada9a826fc4bdfd3d939fb9a6a3f009c89a4c9a9c490c501ed1d103",
+    "banc_signed_t42": "4068fdcd12f0650d496d5b3b6d04cf9140fcbeaf8f36b66f5e1b77436e34df5d",
+    "banc_signed_t43": "d85c18f6ccb93275ff1323aae2b674266f9aa136dbf1a8fb6402a2d3d17010d1",
+    "banc_signed_t44": "66a1d0f7beea0822cc2b9f4eeacf2fb6ea2e165ca29810fd260ed82dc070b7e8",
+    "banc_signed_t45": "0db18348bfa1b30a17e87566e07c862c0ff4d958b50e09c03791e408beaead91",
+    "banc_signed_t46": "ee8f67b0511109c605ec53aa7d3248e00b8bfd0ddaaf19a37e589ea2f3785d7a",
+    "rewired_signed_t42_r1042": "3703089b5582cf67273dee56514ce8956e9be7ab61e657d3f067df101abb3235",
+    "rewired_signed_t42_r1043": "8158ba22bcd1aea1e192f200b469f1a1098f7379a2bd63bdfaae127fb5dc2e9a",
+    "rewired_signed_t42_r1044": "65ee75af0a125176096481003f4db610ad78412f8d2db66e53e7306552981af4",
+    "rewired_signed_t43_r1042": "be5b55a9c42bdf81c0eb442e4c52c614e3247e57a55aecad3e589ea48f92510b",
+    "rewired_signed_t43_r1043": "60a3f78f4fe57e30369a96e3e0aff6914eccf800f3ebddf625b43afd822caa31",
+    "rewired_signed_t43_r1044": "09f111b8701d00cd537bb18075e185fa52e6ca7a25b95e1619b7a7e5ea1bf7a3",
+    "rewired_signed_t44_r1042": "8b6525fbaa648cf4b067262b1c3e9087f06d45d1646e367ddb9b4317488977bd",
+    "rewired_signed_t44_r1043": "1ff17aac355711a8849170d7967834bf43088f37af98f05c6339c00efac9d479",
+    "rewired_signed_t44_r1044": "11f620aa076605a8d333cda59cca693dbb6d5227943e90aa331c937047415bbc",
+    "rewired_signed_t45_r1042": "56181dc358a14c175dc9a281e454264374934c56b92e8f47a576821e824b0785",
+    "rewired_signed_t45_r1043": "2f6f047943371722487ff72d80a9858b82c26dc713d2201a96c744a4a3f2a64e",
+    "rewired_signed_t45_r1044": "56d44e5f259c4ea797ea595f529c57782ee28f52817c1e38d2a5b77ee51ec85b",
+    "rewired_signed_t46_r1042": "8ee0aa4e7022f4be703fd55e1cff7d688e47c9542a14d4e12f76a293423b771f",
+    "rewired_signed_t46_r1043": "f9f5030707103815e284aa2721113b2d644ff87bc51a22ab97f95fe1b38b0bf9",
+    "rewired_signed_t46_r1044": "54c4a3d2f28db7bd5a0fbfbeae2cc3162a8e3767e2b2afe35a2892117b7b7d70"
+  },
+  "script_sha256": "41a856dbf2097643f003b87ff67e3afdf48533081acbf9e65f14a0d39296a578",
+  "python": "3.11.9",
+  "versions": {
+    "numpy": "1.26.0",
+    "pandas": "2.0.0",
+    "torch": "2.1.0",
+    "scikit-learn": "1.3.0",
+    "joblib": "1.3.0"
+  },
+  "elapsed_seconds": 24.63770750000549,
+  "normal_checks": 300,
+  "finished_utc": "2026-11-16T13:47:45.698251+00:00"
+}

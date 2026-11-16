@@ -73,3 +73,62 @@ The software verifies input columns and structure only, **not the external prove
 
 ## 2026-10-24 audit update
 See [AUDIT_KO.md](AUDIT_KO.md) for measured verification, reproducibility limits, and revised commands. `banc_unsigned` remains the historical all-positive control; `banc_free` is the new unconstrained-sign control. Use `python run_5_seeds.py --extended-controls --outdir results/revised_native_5seeds`. Existing output folders cannot be overwritten. The dashboard reads measured CSVs and displays real supplied graph edges and neuron IDs. The extracted region is VNC, not the entire brain.
+
+## FlyBrake Lab — 1단계 (2026-11-02)
+
+기존 홈 화면은 그대로 유지하며 Streamlit 사이드바의 **FlyBrake Lab** 페이지에서
+저장된 결과 묶음·학습 시드·모델 A/B·센서 조건·안전장치를 선택해 비교합니다.
+Lab의 시드 선택은 카드, 표, 그래프, 동일 coverage 분석에 모두 적용됩니다.
+홈 화면의 기존 시드 선택은 여전히 모델/그래프 확인용입니다. 시드별 성능 비교는 Lab을 이용하세요.
+Lab은 체크포인트를 불러오거나 학습하지 않습니다.
+
+PyCharm Terminal (PowerShell):
+
+```powershell
+cd D:\flybrake
+.\.venv\Scripts\python.exe -m streamlit run app.py
+```
+
+새 환경에 Plotly만 빠졌다면 기존 패키지를 업그레이드하지 않고 추가합니다.
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install --no-deps plotly==5.24.1
+.\.venv\Scripts\python.exe -m pip check
+```
+
+테스트:
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest test_research test_lab_results test_lab_ui -v
+.\.venv\Scripts\python.exe smoke_test.py
+```
+
+- `src/lab_results.py`: 읽기 전용 결과 검색, 스키마 검사, 필터와 표시용 집계.
+- `src/lab_charts.py`: 카드/표와 같은 수치로 Plotly 그림 생성.
+- `pages/1_FlyBrake_Lab.py`: 독립 멀티페이지 UI.
+- `test_lab_results.py`, `test_lab_ui.py`: 실제 CSV 수치 및 화면 조작 회귀 검사.
+
+묶음의 `metrics_5seeds.csv`가 있으면 그것만 사용하고, 없으면 해당 묶음의 `seed*/metrics.csv`를 읽습니다.
+요약 CSV를 원시 측정값으로 취급하지 않습니다. 누락된 지표는 N/A, 잘못된 필수 열·중복 행은 안내로 표시합니다.
+일부 시드만 있는 조건은 전체 시드 평균으로 표시하지 않습니다. 평균의 표준편차는 ddof=1이며 신뢰구간이 아닙니다.
+CSV 캐시는 경로·수정시각(ns)·크기로 구분하며, 사이드바의 새로 읽기 버튼으로 명시적으로 갱신할 수 있습니다.
+
+동일 coverage는 `test_score_top_k_no_labels` 분석만 사용합니다. 검증 임계값 분석은 별도 접힌 섹션이며
+안전장치 OFF 조건임을 명시합니다. 동일 coverage라도 선택된 표본이 같다는 뜻은 아닙니다.
+
+## FlyBrake Lab — 2단계 뉴런 실험 (2026-11-02)
+
+기존 실행 명령 `python -m streamlit run app.py`의 왼쪽 메뉴에서 **FlyBrake Neurons**를 선택합니다.
+실제 연결망의 노드 클릭 또는 드롭다운으로 뉴런을 고르고, 단일 뉴런 비활성화 ON/OFF로 같은 입력의 모델 점수를 비교합니다.
+각 4단계 재귀 계산 후 선택 뉴런의 활성값을 0으로 고정하며 가중치를 수정하거나 재학습하지 않습니다.
+뉴런/체크포인트 선택을 바꾸면 비활성화는 OFF로 초기화됩니다.
+
+현재 Python 3.11 환경에서는 **기존 결과 · results**의 시드 42~46을 사용하세요.
+`revised_audit_20261024`는 전처리 저장 버전 차이로 그래프 탐색만 가능하며, 추론은 호환 환경이 필요합니다.
+단일 입력의 점수 변화는 전체 테스트 성능이나 생물학적 기능을 입증하지 않습니다.
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest test_research test_lab_results test_lab_ui test_lab_ablation test_lab_neurons_ui -v
+```
+
+구현·검증·제한 사항은 [LAB_PHASE2_REPORT_KO.md](LAB_PHASE2_REPORT_KO.md)에 기록했습니다.

@@ -1,0 +1,16 @@
+﻿kind,model,scenario,safety_gate,method,target_coverage,metric,n_valid,stored_mean
+validation,banc_free,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,f1_decided_only,3,0
+validation,banc_free,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,recall_decided_only,3,0
+validation,banc_free,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,precision_decided_only,3,0
+validation,banc_signed,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,f1_decided_only,2,0
+validation,banc_signed,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,recall_decided_only,2,0
+validation,banc_signed,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,precision_decided_only,2,0
+validation,rewired_free,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,f1_decided_only,4,0
+validation,rewired_free,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,recall_decided_only,4,0
+validation,rewired_free,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,precision_decided_only,4,0
+validation,rewired_signed,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,f1_decided_only,2,0
+validation,rewired_signed,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,recall_decided_only,2,0
+validation,rewired_signed,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,precision_decided_only,2,0
+validation,rewired_unsigned,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,f1_decided_only,4,0
+validation,rewired_unsigned,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,recall_decided_only,4,0
+validation,rewired_unsigned,normal,False,validation_threshold_test_coverage_not_guaranteed,0.25,precision_decided_only,4,0
