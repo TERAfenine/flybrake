@@ -9,7 +9,7 @@
 - Streamlit demo reports only **suggestions and abstention**, never controls a real device.
 
 ## Setup
-Use Python 3.10+ in a new virtual environment:
+Use Python 3.11 in a new virtual environment for the bundled saved models:
 ```
 python -m pip install -r requirements.txt
 python smoke_test.py
@@ -132,3 +132,19 @@ CSV 캐시는 경로·수정시각(ns)·크기로 구분하며, 사이드바의 
 ```
 
 구현·검증·제한 사항은 [LAB_PHASE2_REPORT_KO.md](LAB_PHASE2_REPORT_KO.md)에 기록했습니다.
+
+### Streamlit Community Cloud deployment
+
+Deploy `app.py` using `requirements.txt` and Python **3.11** (Advanced settings).
+The default guided demo loads `results/seed42/sensor_prep.joblib`, saved with
+scikit-learn **1.3.0**. Keep the dependency pins; do not bypass the version check
+or refit preprocessing just to clear a loading error.
+
+Push requirements changes to the app's connected GitHub branch to trigger
+installation. Changing the deployed Python version requires recording the app's
+repository, branch, entrypoint, subdomain and any secrets, then deleting and
+redeploying with Python 3.11. See the
+[official instructions](https://docs.streamlit.io/deploy/streamlit-community-cloud/manage-your-app/upgrade-python).
+
+The historical `results/revised_audit_20261024` checkpoints record scikit-learn
+**1.9.1** and require a separate matching environment for live inference.
